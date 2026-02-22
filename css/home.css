@@ -1,0 +1,145 @@
+/* page headings */
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+}
+
+.hero-section h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.search-container button {
+    width: 60px;
+    background: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+}
+
+.search-container button:hover {
+    background: #e0961f;
+}
+
+/* Section Major cities */
+.city-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Bigger city circle sizes requested by user */
+.city-circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.city-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .city-circle {
+        width: 260px;
+        height: 260px;
+    }
+    .city-circle img {
+        width: 72%;
+        height: 72%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .city-circle {
+        width: 400px;
+        height: 400px;
+    }
+    .city-circle img {
+        width: 76%;
+        height: 76%;
+    }
+}
+
+.city-card p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    margin: 0;
+}
+
+.page-container h1{
+    text-align: center;
+    margin: 24px 0;
+    display: block;
+    width: 100%;
+}
+
+/* Small search bar adjustments */
+.city-search {
+    width: 100%;
+    max-width: 420px;
+    margin: 12px auto;
+}
+.input-city {
+    padding: 8px 10px;
+    font-size: 14px;
+    height: auto;
+}
+.input-group-append .btn {
+    padding: 6px 10px;
+}
+.banner-container .input-group.city-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
