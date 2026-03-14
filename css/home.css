@@ -1,10 +1,13 @@
-/* page headings */
-
-/* Hero Section */
+/* ===============================
+   HERO SECTION
+================================ */
 .hero {
     width: 100%;
     height: 300px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(../img/bg.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -21,54 +24,71 @@
 }
 
 .hero-section h1 {
-    color: white;
+    color: #fff;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.search-container {
-    width: 90%;
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    background: white;
+
+/* ===============================
+   SEARCHsearch
+================================ */
+.city-search {
+    width: 100%;
+    max-width: 420px;
+    margin: 12px auto;
+}
+
+.input-city {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.banner-container .input-group.city-search {
+    background: #fff;
     border-radius: 6px;
     overflow: hidden;
-    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.search-container input {
-    flex: 1;
-    padding: 14px 16px;
-    font-size: 15px;
-    border: none;
-    outline: none;
+
+/* ===============================
+   PAGE CONTAINER
+================================ */
+.page-container {
+    padding: 30px 20px 50px;
 }
 
-.search-container button {
-    width: 60px;
-    background: grey;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: #000;
+.city-heading {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.search-container button:hover {
-    background: #e0961f;
-}
 
-/* Section Major cities */
-.city-card {
-    display: flex;
-    flex-direction: column;
+
+
+/* ===============================
+   FORCE HORIZONTAL MAJOR CITIES
+================================ */
+
+/* .cities-wrapper {
+    display: flex !important;
+    flex-direction: row !important;  
+    justify-content: center !important;
     align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;             
 }
 
-/* Bigger city circle sizes requested by user */
+.city-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 .city-circle {
-    width: 500px;
-    height: 500px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
@@ -121,7 +141,7 @@
     width: 100%;
 }
 
-/* Small search bar adjustments */
+/* Small search bar adjustments 
 .city-search {
     width: 100%;
     max-width: 420px;
@@ -142,4 +162,46 @@
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+} */
+
+/* ===============================
+   MAJOR CITIES — SAFE FIX
+   (no HTML changes)
+================================ */
+
+/* Keep Bootstrap row horizontal */
+.page-container .row {
+    flex-wrap: wrap;
+}
+
+/* Center each card inside its column */
+.city-card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Responsive circle that NEVER overflows column */
+.city-circle {
+    width: 100%;
+    max-width: 200px;   /* critical */
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image */
+.city-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Ensure links behave normally */
+.city-card-container a {
+    display: inline-block;
+    text-decoration: none;
 }

@@ -42,44 +42,42 @@ session_start();
     </div>
 
     <div class="page-container">
-        <h1 class="city-heading">
-            Major Cities
-        </h1>
-        <div class="row">
-            <div class="city-card-container col-md">
-                <a href="property_list.php?city=Delhi">
-                    <div class="city-card city-circle rounded-circle">
-                        <img src="img/delhi.png" class="city-img" />
-                    </div>
-                </a>
-            </div>
+    <h1 class="city-heading">Major Cities</h1>
 
-            <div class="city-card-container col-md">
-                <a href="property_list.php?city=Mumbai">
-                    <div class="city-card city-circle rounded-circle">
-                        <img src="img/mumbai.png" class="city-img" />
-                    </div>
-                </a>
-            </div>
+    <div class="row justify-content-center">
+        <div class="city-card-container col-6 col-md-3">
+            <a href="property_list.php?city=Delhi">
+                <div class="city-card city-circle rounded-circle">
+                    <img src="img/delhi.png" class="city-img" />
+                </div>
+            </a>
+        </div>
 
-            <div class="city-card-container col-md">
-                <a href="property_list.php?city=Bengaluru">
-                    <div class="city-card city-circle rounded-circle">
-                        <img src="img/bangalore.png" class="city-img" />
-                    </div>
-                </a>
-            </div>
+        <div class="city-card-container col-6 col-md-3">
+            <a href="property_list.php?city=Mumbai">
+                <div class="city-card city-circle rounded-circle">
+                    <img src="img/mumbai.png" class="city-img" />
+                </div>
+            </a>
+        </div>
 
-            <div class="city-card-container col-md">
-                <a href="property_list.php?city=Hyderabad">
-                    <div class="city-card city-circle rounded-circle">
-                        <img src="img/hyderabad.png" class="city-img" />
-                    </div>
-                </a>
-            </div>
+        <div class="city-card-container col-6 col-md-3">
+            <a href="property_list.php?city=Bengaluru">
+                <div class="city-card city-circle rounded-circle">
+                    <img src="img/bangalore.png" class="city-img" />
+                </div>
+            </a>
+        </div>
+
+        <div class="city-card-container col-6 col-md-3">
+            <a href="property_list.php?city=Hyderabad">
+                <div class="city-card city-circle rounded-circle">
+                    <img src="img/hyderabad.png" class="city-img" />
+                </div>
+            </a>
         </div>
     </div>
-
+</div>
     <?php
     include "includes/signup_modal.php";
     include "includes/login_modal.php";
